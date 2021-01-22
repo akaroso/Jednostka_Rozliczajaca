@@ -1,0 +1,15 @@
+{
+    "private": true,
+    "scripts": {
+        "clearLaravelConfig":"composer dump-autoload && php artisan cache:clear && php artisan config:clear && php artisan config:cache",
+        "clearDatabase":"php artisan migrate:fresh --seed",
+        "runApp":"php artisan serve"
+    },
+    "devDependencies": {
+        "axios": "^0.19",
+        "cross-env": "^7.0",
+        "laravel-mix": "^5.0.1",
+        "lodash": "^4.17.19",
+        "resolve-url-loader": "^3.1.0"
+    }
+}
